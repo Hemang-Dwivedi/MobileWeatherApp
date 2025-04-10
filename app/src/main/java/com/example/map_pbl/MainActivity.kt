@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun fetchWeather(lat: Double, lon: Double) {
-        val apiKey = "e12ffacced2626afb0c7836d53c7044c" // Replace with actual API key
+        val apiKey = "ABBCD" // Replace with actual API key
         val call = weatherApi.getWeather(lat.toString(), lon.toString(), apiKey)
         Log.e("Respo", "${call}")
         call.enqueue(object : Callback<WeatherResponse> {
